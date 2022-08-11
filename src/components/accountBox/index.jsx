@@ -18,7 +18,7 @@ const BoxContainer = styled.div`
 `;
 
 const TopContainer = styled.div`
-  width: 100%;
+  width: 150%;
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -37,11 +37,11 @@ const BackDrop = styled(motion.div)`
   transform: rotate(60deg);
   top: -290px;
   left: -70px;
-  background: rgb(241, 196, 15);
+  background: rgb(228, 64, 41);
   background: linear-gradient(
     58deg,
-    rgba(241, 196, 15, 1) 20%,
-    rgba(243, 172, 18, 1) 100%
+    rgba(221, 64, 41, 1) 20%,
+    rgba(230, 72, 38, 1) 100%
   );
 `;
 
@@ -61,7 +61,7 @@ const HeaderText = styled.h2`
 `;
 
 const SmallText = styled.h5`
-  color: #fff;
+  color: fff;
   font-weight: 500;
   font-size: 11px;
   z-index: 10;
@@ -78,7 +78,7 @@ const InnerContainer = styled.div`
 
 const backdropVariants = {
   expanded: {
-    width: "233%",
+    width: "333%",
     height: "1050px",
     borderRadius: "20%",
     transform: "rotate(60deg)",
@@ -136,14 +136,14 @@ export function AccountBox(props) {
           />
           {active === "signin" && (
             <HeaderContainer>
-              <HeaderText>Welcome</HeaderText>
-              <HeaderText>Back</HeaderText>
+              <HeaderText>Welcome back to</HeaderText>
+              <HeaderText>Equidraft</HeaderText>
               <SmallText>Please sign-in to continue!</SmallText>
             </HeaderContainer>
           )}
           {active === "signup" && (
             <HeaderContainer>
-              <HeaderText>Create</HeaderText>
+              <HeaderText>Create Equidraft</HeaderText>
               <HeaderText>Account</HeaderText>
               <SmallText>Please sign-up to continue!</SmallText>
             </HeaderContainer>
