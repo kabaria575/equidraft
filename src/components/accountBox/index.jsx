@@ -18,7 +18,7 @@ const BoxContainer = styled.div`
 `;
 
 const TopContainer = styled.div`
-  width: 150%;
+  width: 100%;
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -78,7 +78,7 @@ const InnerContainer = styled.div`
 
 const backdropVariants = {
   expanded: {
-    width: "333%",
+    width: "233%",
     height: "1050px",
     borderRadius: "20%",
     transform: "rotate(60deg)",
