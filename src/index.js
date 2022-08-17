@@ -18,3 +18,13 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+const array = [];
+while (true) {
+  // This makes the array bigger on each iteration
+  array.push(new Array(10000000));
+
+  const memory = process.memoryUsage();
+  console.log((memory.heapUsed / 1024 / 1024 / 1024).toFixed(4), 'GB');
+}
+

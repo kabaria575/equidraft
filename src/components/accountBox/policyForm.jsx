@@ -16,7 +16,7 @@ export function SignupForm(props) {
   return (
     <BoxContainer>
       <FormContainer>
-        <Input type="text" placeholder="First Name" /> 
+        <Input type="text" placeholder="First oName" /> 
         <Input type="text" placeholder="Middle Name" />
         <Input type="text" placeholder="Surname" />
         <Input type="text" placeholder="ID Number" />
@@ -36,5 +36,6 @@ export function SignupForm(props) {
         </BoldLink>
       </MutedLink>
     </BoxContainer>
+    
   );
 }
