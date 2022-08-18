@@ -1,18 +1,16 @@
 import React, { Component, Fragment } from 'react';
-import '../css/App.css';
 import Grid from "@material-ui/core/Grid";
 import Hidden from "@material-ui/core/Hidden";
 import LeftSection from "../components/LeftSection";
 import RightSection from "../components/RightSection";
-import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
-import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
+import { createTheme } from '@material-ui/core/styles';
 import blue from "@material-ui/core/es/colors/blue";
 import {connect} from "react-redux";
 import withStyles from "@material-ui/core/styles/withStyles";
 import createStyles from "@material-ui/core/styles/createStyles";
-import {toggleDrawer} from "../actions/AppActions";
+import {toggleDrawer} from "../actions/AppAction";
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: { main: blue[500], light: blue[100] },
   },
@@ -29,7 +27,7 @@ class App extends Component {
   render() {
       const {classes} = this.props;
     return (
-        <MuiThemeProvider theme={theme}>
+        <createTheme theme={theme}>
           <Fragment>
             <Grid container className={classes.container}>
               <Hidden mdDown>
@@ -42,7 +40,7 @@ class App extends Component {
               </Grid>
             </Grid>
           </Fragment>
-        </MuiThemeProvider>
+        </createTheme>
     );
   }
 }

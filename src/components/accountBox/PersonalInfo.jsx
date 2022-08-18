@@ -1,16 +1,12 @@
 import React from "react";
-import {connect} from "react-redux";
 import TextField from "@material-ui/core/TextField";
 import withStyles from "@material-ui/core/styles/withStyles";
 import createStyles from "@material-ui/core/styles/createStyles";
 import Grid from "@material-ui/core/Grid";
-import {changeModel} from "../actions/ApplicationActions";
-import FormLabel from "@material-ui/core/FormLabel";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Radio from "@material-ui/core/Radio";
 import FormControl from "@material-ui/core/FormControl";
-import FormHelperText from "@material-ui/core/FormHelperText";
 
 const styles = theme => createStyles({
     wrapper: {

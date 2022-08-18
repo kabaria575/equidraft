@@ -1,5 +1,5 @@
 import {changeStep} from "../actions/ApplicationActions";
-import {Store} from "../store";
+import store from "../Store";
 
 const regExps = {
     name: /^[A-Za-z]{3,20}$/,

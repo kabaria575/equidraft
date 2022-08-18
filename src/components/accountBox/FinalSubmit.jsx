@@ -1,6 +1,4 @@
 import React from "react";
-import {connect} from "react-redux";
-import TextField from "@material-ui/core/TextField";
 import withStyles from "@material-ui/core/styles/withStyles";
 import createStyles from "@material-ui/core/styles/createStyles";
 import Grid from "@material-ui/core/Grid";

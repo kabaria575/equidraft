@@ -7,7 +7,6 @@ import MonitizationOn from "@material-ui/icons/MonetizationOn";
 import Button from "@material-ui/core/Button";
 import Divider from "@material-ui/core/Divider";
 import withRouter from "react-router-dom/withRouter";
-import {connect} from "react-redux";
 
 const styles = theme => createStyles({
     root: {

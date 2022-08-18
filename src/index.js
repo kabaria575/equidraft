@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './components/containers/App';
 import reportWebVitals from './reportWebVitals';
 
 
@@ -28,4 +28,3 @@ while (true) {
   const memory = process.memoryUsage();
   console.log((memory.heapUsed / 1024 / 1024 / 1024).toFixed(4), 'GB');
 }
-
