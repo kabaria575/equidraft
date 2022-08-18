@@ -3,7 +3,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import createStyles from "@material-ui/core/styles/createStyles";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import Icon from "@material-ui/core/Icon";
-import Loader from "react-loader-spinner";
+import * as Loader from "react-loader-spinner";
 import Typography from "@material-ui/core/Typography";
 
 const styles = theme => createStyles({

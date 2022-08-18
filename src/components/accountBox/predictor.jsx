@@ -1,7 +1,7 @@
 import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 import createStyles from "@material-ui/core/styles/createStyles";
-import Heading from "../components/Heading";
+import Heading from "../accountBox/Heading";
 import {connect} from "react-redux";
 import PredictorForm from "../containers/PredictorForm";
 
